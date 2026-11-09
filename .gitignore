@@ -51,8 +51,24 @@ Thumbs.db
 __debug_bin*
 debug
 
+# Local exploratory reports
+AI_SOFTWARE_ARCHITECT_ADR_RG_OVERLAP_EXPLORATION.md
+
 # OS generated
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
+
+# Local credentials and generated development files
+node_modules/
+.venv/
+.build/
+.uv-cache/
+.gocache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.next/
+.gradle/
+.env*
