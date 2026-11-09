@@ -1,0 +1,162 @@
+$color-primary: #3046c5;
+$color-secondary: #5637dd;
+$color-pale: #cec8ff;
+$color-mid: #901cad;
+$color-dark: #60106b;
+$color-teal: #17a2b8;
+$color-black-translucent: #00000055;
+$color-play-button-border-dark: rgb(99, 66, 66);
+$color-play-button-border-light: rgb(156, 99, 99);
+$color-play-button: rgb(92, 9, 9);
+$color-play-button-shadow: rgb(150, 2, 2);
+
+$grow: scale(1.2);
+$shrink: scale(0.95);
+
+$fast-transition: all 0.5s ease;
+$slow-transition: all 2s ease;
+
+@import 'lobster.scss';
+@import 'open-sans.scss';
+
+$font-body: 'Open Sans', sans-serif;
+$font-header: 'Lobster', cursive;
+
+body {
+	box-sizing: border-box;
+	font-family: $font-body;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $font-header;
+}
+
+h2 {
+	color: $color-primary;
+}
+
+header {
+	h2 {
+		color: $color-pale;
+	}
+}
+
+.navbar {
+	background-color: $color-mid;
+}
+
+.carousel {
+	border: solid $color-secondary;
+}
+
+#carouselButton {
+	border-top: 2px solid $color-play-button-border-dark;
+	border-right: 2px solid $color-play-button-border-light;
+	border-bottom: 2px solid $color-play-button-border-light;
+	border-left: 2px solid $color-play-button-border-dark;
+	box-shadow: inset 2px 2px 4px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+
+#carouselButton > i {
+	transition: $fast-transition;
+}
+
+#carouselButton:hover {
+	text-shadow: inset 3px 3px 6px black;
+	opacity: 0.9;
+	transform: $shrink;
+}
+
+.carousel-caption {
+	background-color: $color-black-translucent;
+}
+
+.content-box {
+	box-sizing: content-box;
+}
+
+.copy-block {
+	opacity: 0.3;
+	transition: $slow-transition;
+}
+
+.copy-block:hover {
+	cursor: help;
+	opacity: 1;
+	transform: $grow;
+}
+
+.copy-sign {
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.jumbotron {
+	padding: 30px;
+	background-image: linear-gradient(
+		to right,
+		$color-secondary,
+		$color-primary,
+		$color-dark
+	);
+	border-radius: 0px;
+	color: white;
+	margin: 0;
+}
+
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+.site-footer {
+	background-image: linear-gradient(#cec8ff, white);
+	padding: 20px 0;
+}
+
+.tab-content {
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.copy-sign {
+		animation: copy-sign-rotate infinite 10s linear;
+	}
+}
+
+@keyframes copy-sign-rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#reserveModal {
+	.modal-header {
+		background-color: $color-teal;
+		h3 {
+			color: white;
+		}
+	}
+}
+
+#loginModal {
+	.modal-header {
+		background-color: $color-mid;
+		h3 {
+			color: white;
+		}
+	}
+}

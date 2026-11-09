@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="img/favicon-32x32.png"
+			sizes="32x32"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="img/favicon-16x16.png"
+			sizes="16x16"
+		/>
+
+		<!-- build:css css/main.css -->
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="css/_lobster.css" />
+		<link rel="stylesheet" href="css/_open-sans.css" />
+		<link
+			rel="stylesheet"
+			href="node_modules/font-awesome/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-social/bootstrap-social.css"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- endbuild -->
+
+		<title>NuCamp: A Better Way To Camp</title>
+	</head>
+	<body>
+		<header class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-sm-3 col-md-2 align-self-center">
+						<img src="img/logo.png" class="img-fluid" />
+					</div>
+					<hgroup class="col">
+						<h1>NuCamp</h1>
+						<h2>a better way to camp</h2>
+					</hgroup>
+				</div>
+			</div>
+		</header>
+
+		<nav
+			id="main-navigation"
+			class="navbar navbar-expand-sm navbar-dark sticky-top"
+			aria-label="Main navigation bar"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="index.html"
+					><img src="img/logo.png" height="30" width="30"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#nucampNavbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="nucampNavbar" class="collapse navbar-collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">
+								<i class="fa fa-home fa-lg"></i>
+								Home
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#" aria-current="page">
+								<i class="fa fa-info fa-lg"></i>
+								About
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#sites">
+								<i class="fa fa-list fa-lg"></i>
+								Sites
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contactus.html">
+								<i class="fa fa-address-card fa-lg"></i>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<nav class="container" aria-label="breadcrumbs">
+			<div class="row">
+				<div class="col">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="index.html" aria-current="page">Home</a>
+						</li>
+						<li class="breadcrumb-item active">About</li>
+					</ol>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2>About Us</h2>
+					<hr />
+				</div>
+			</div>
+
+			<div class="row row-content">
+				<div class="col col-sm-6">
+					<h3>Our Mission</h3>
+					<p class="">
+						We present a curated database of the best campsites in the vast
+						woods and backcountry of the World Wide Web Wilderness. We increase
+						access to adventure for the public while promoting safe and
+						respectful use of resources. The expert wilderness trekkers on our
+						staff personally verify each campsite to make sure that they are up
+						to our standards. We also present a platform for campers to share
+						reviews on campsites they have visited with each other.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+						<!-- I tried bg-light here and like matching it with table below -->
+						<!-- <div class="card-body bg-light"> -->
+						<div class="card-body">
+							<dl class="row">
+								<dt class="col-6">Founded</dt>
+								<dd class="col-6">February 3, 2016</dd>
+								<dt class="col-6">No. of Campsites in 2019</dt>
+								<dd class="col-6">563</dd>
+								<dt class="col-6">No. of Reviews in 2019</dt>
+								<dd class="col-6">4388</dd>
+								<dt class="col-6">Employees</dt>
+								<dd class="col-6">42</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-light-mt3">
+						<blockquote class="blockquote card-body">
+							<p class="mb-0">
+								I will not follow where the path may lead, but I will go where
+								there is no path, and I will leave a trail.
+							</p>
+							<footer class="blockquote-footer">
+								Muriel Strode,
+								<cite title="Source Title">
+									"Wind-Wafted Wild Flowers" - The Open Court, 1903
+								</cite>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-content">
+				<div class="col">
+					<h3>Community Partners</h3>
+					<div id="accordion">
+						<div class="card">
+							<div role="tab" class="card-header">
+								<h4>
+									<a
+										class="collapsed text-reset text-decoration-none"
+										data-toggle="collapse"
+										data-target="#bootstrap"
+									>
+										Bootstrap Outfitters <small>Outdoor Gear Specialists</small>
+									</a>
+								</h4>
+								<div
+									class="collapse show"
+									id="bootstrap"
+									data-parent="#accordion"
+								>
+									<div class="card-body">
+										<p class="d-none d-sm-block">
+											Bootstrap Outfitters supplies you with the gear you need
+											at prices you can't beat.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- </div> -->
+						<div class="card">
+							<div class="card-header" role="tab">
+								<h4>
+									<a
+										class="collapsed text-reset text-decoration-none"
+										data-target="#git"
+										data-toggle="collapse"
+									>
+										Git Out Expeditions
+										<small>Group Adventure Expeditions</small>
+									</a>
+								</h4>
+								<div class="collapse" id="git" data-parent="#accordion">
+									<div class="card-body">
+										<p class="d-none d-sm-block">
+											Join Git Out Expeditions to explore new horizons with a
+											group of other adventurers!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab">
+								<h4>
+									<a
+										class="collapsed text-reset text-decoration-none"
+										data-target="#mongo"
+										data-toggle="collapse"
+									>
+										Mongo Fly Shop
+										<small>Your Neighborhood Fly Fishing Shop</small>
+									</a>
+								</h4>
+								<div class="collapse" id="mongo" data-parent="#accordion">
+									<div class="card-body">
+										<p class="d-none d-sm-block">
+											Need a new fishing pole, a tacklebox, or flies of all
+											kinds? Stop by Mongo Fly Shop.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div role="tab" class="card-header">
+								<h4>
+									<a
+										class="collapsed text-reset text-decoration-none"
+										data-toggle="collapse"
+										data-target="#node"
+									>
+										Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small>
+									</a>
+								</h4>
+								<div class="collapse" id="node" data-parent="#accordion">
+									<div class="card-body">
+										<p class="d-none d-sm-block">
+											From polar fleeces to swimsuits, hiking boots to waders, a
+											visit to Node will be sure to get you covered.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-content">
+				<div class="col-sm-6">
+					<h2>Facts &amp; Figures</h2>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<!-- note: bootstrap docs show styling <thead /> not <tr /> -->
+								<tr class="bg-primary text-light">
+									<th scope="row"></th>
+									<th>2016</th>
+									<th>2017</th>
+									<th>2018</th>
+								</tr>
+							</thead>
+							<!-- I think bg-light color looks nice here matched with card-body bg-light above -->
+							<!-- <tbody class="table-light"> -->
+							<tbody class="table-primary">
+								<tr>
+									<th scope="row">Staff Wilderness Experts</th>
+									<td>10</td>
+									<td>20</td>
+									<td>40</td>
+								</tr>
+								<tr>
+									<th scope="row">New Campers</th>
+									<td>256</td>
+									<td>1,280</td>
+									<td>5,360</td>
+								</tr>
+								<tr>
+									<th scope="row">Square Miles Covered</th>
+									<td>101,325</td>
+									<td>423,000</td>
+									<td>~3,000,000,000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div
+						id="footer-navigation"
+						class="col-4 col-sm-2 offset-1"
+						role="navigation"
+					>
+						<h5>Links</h5>
+						<ul class="list-unstyled">
+							<li class="">
+								<a href="index.html" class="text-secondary text-decoration-none"
+									>Home</a
+								>
+							</li>
+							<li class="text-decoration-none">
+								<a href="#" class="text-decoration-none"
+									>About<span class="sr-only">(current)</span></a
+								>
+							</li>
+							<li class="">
+								<a
+									href="index.html#sites"
+									class="text-secondary text-decoration-none"
+									>Sites</a
+								>
+							</li>
+							<li class="">
+								<a
+									href="contactus.html"
+									class="text-secondary text-decoration-none"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div
+						id="footer-social-media-site-links"
+						class="col-6 col-sm-5 text-center"
+					>
+						<h5>Social</h5>
+						<ul class="list-unstyled" role="navigation">
+							<a
+								href="https://instagram.com/"
+								class="btn btn-social-icon btn-instagram"
+								target="_blank"
+								aria-label="Link to nucamp instagram page (opens in new tab)"
+								rel="external noopener noreferrer"
+								><i class="fa fa-instagram"></i
+							></a>
+							<a
+								href="https://facebook.com/"
+								class="btn btn-social-icon btn-facebook"
+								target="_blank"
+								aria-label="Link to nucamp facebook page (opens in new tab)"
+								rel="external noopener noreferrer"
+								><i class="fa fa-facebook"></i
+							></a>
+							<a
+								href="https://twitter.com/"
+								target="_blank"
+								class="btn btn-social-icon btn-twitter"
+								aria-label="Link to nucamp twitter page (opens in new tab)"
+								rel="external noopener noreferrer"
+								><i class="fa fa-twitter"></i
+							></a>
+							<a
+								href="https://youtube.com/"
+								target="_blank"
+								class="btn btn-social-icon btn-google"
+								aria-label="Link to nucamp youtube page (opens in new tab)"
+								rel="external noopener noreferrer"
+								><i class="fa fa-youtube-play"></i
+							></a>
+						</ul>
+					</div>
+
+					<div id="footer-contact-links" class="col-sm-4 text-center">
+						<a
+							aria-label="2 0 6. 5 5 5.1 2 3 4."
+							class="
+								btn btn-link
+								text-secondary text-nowrap text-decoration-none
+							"
+							href="tel:+12065551234"
+							role="button"
+						>
+							<i class="fa fa-phone fa-lg text-primary"></i>
+							&nbsp; +1 (206) 555-1234</a
+						>
+						<br />
+						<a
+							aria-label="Contact nucampsites via email"
+							class="
+								btn btn-link
+								text-secondary text-nowrap text-decoration-none
+							"
+							href="mailto:campsites@nucamp.co"
+							role="button"
+							><i class="fa fa-envelope-o fa-lg text-primary"></i> &nbsp;
+							campsites@nucamp.co</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer-site-copyright-info" class="container mt-3">
+				<div class="d-flex flex-column align-items-center copy-block">
+					<!-- align-self-center for footer? -->
+					<div>
+						<i class="fa fa-copyright copy-sign" aria-hidden="true"></i>&nbsp;
+						<span id="this-year"> </span>
+						<span id="this-second"> </span>
+					</div>
+					<a href="http://www.wtfpl.net/"
+						><img
+							src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+							width="80"
+							height="15"
+							alt="WTFPL"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- build:js js/main.js -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/copyrightLogo.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lobster.woff") format("woff"), url("../fonts/lobster.ttf") format("truetype"), url("https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9_oU.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lobster.woff") format("woff"), url("../fonts/lobster.ttf") format("truetype"), url("https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9_oU.ttf") format("truetype"); }
+
+/*# sourceMappingURL=_open-sans.scss.map */
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive; }
+
+h2 {
+  color: #3046c5; }
+
+header h2 {
+  color: #cec8ff; }
+
+.navbar {
+  background-color: #901cad; }
+
+.carousel {
+  border: solid #5637dd; }
+
+#carouselButton {
+  border-top: 2px solid #634242;
+  border-right: 2px solid #9c6363;
+  border-bottom: 2px solid #9c6363;
+  border-left: 2px solid #634242;
+  box-shadow: inset 2px 2px 4px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
+
+#carouselButton > i {
+  transition: all 0.5s ease; }
+
+#carouselButton:hover {
+  text-shadow: inset 3px 3px 6px black;
+  opacity: 0.9;
+  transform: scale(0.95); }
+
+.carousel-caption {
+  background-color: #00000055; }
+
+.content-box {
+  box-sizing: content-box; }
+
+.copy-block {
+  opacity: 0.3;
+  transition: all 2s ease; }
+
+.copy-block:hover {
+  cursor: help;
+  opacity: 1;
+  transform: scale(1.2); }
+
+.copy-sign {
+  box-sizing: border-box;
+  display: inline-block; }
+
+.jumbotron {
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+  border-radius: 0px;
+  color: white;
+  margin: 0; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.site-footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0; }
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .copy-sign {
+    animation: copy-sign-rotate infinite 10s linear; } }
+
+@keyframes copy-sign-rotate {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
+#reserveModal .modal-header {
+  background-color: #17a2b8; }
+
+#reserveModal .modal-header h3 {
+  color: white; }
+
+#loginModal .modal-header {
+  background-color: #901cad; }
+
+#loginModal .modal-header h3 {
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */
