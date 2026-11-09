@@ -1,0 +1,74 @@
+# Binaries (root level only)
+/adr
+/adr.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build output
+/dist/
+/bin/
+
+# Locally installed and built tools
+/tools/adr/
+
+# Test artifacts
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Go workspace
+go.work
+go.work.sum
+
+# Dependency directories
+/vendor/
+
+# Claude Code local settings (not shared with team)
+.claude/settings.local.json
+.claude/*.local.*
+.claude.json
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Debug
+__debug_bin*
+debug
+
+# Local exploratory reports
+AI_SOFTWARE_ARCHITECT_ADR_RG_OVERLAP_EXPLORATION.md
+
+# OS generated
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Local credentials and generated development files
+node_modules/
+.venv/
+.build/
+.uv-cache/
+.gocache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.next/
+.gradle/
+.env*
